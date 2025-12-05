@@ -1,0 +1,135 @@
+<!-- Mobile Menu Component -->
+<div
+  id="mobileMenu"
+  class="fixed top-0 right-0 w-80 h-full bg-white z-50 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+>
+  <!-- Menu Header -->
+  <div class="flex justify-between items-center p-4 border-b border-gray-200">
+    <h2 class="text-xl font-semibold text-[#14AE5C]">MENU</h2>
+    <button
+      id="closeMobileMenu"
+      onclick="closeMobileMenu()"
+      class="text-3xl text-gray-600 hover:text-gray-800 cursor-pointer"
+    >
+      ×
+    </button>
+  </div>
+
+  <!-- Menu Content -->
+  <div class="p-4">
+    <nav class="space-y-0">
+      <!-- Trang chủ -->
+      <div class="border-b border-gray-200">
+        <a href="/" class="block py-4 text-[16px] text-[#303030] font-medium">
+          Trang chủ
+        </a>
+      </div>
+
+      <!-- Giới thiệu -->
+      <div class="border-b border-gray-200">
+        <div
+          class="flex justify-between items-center py-4 cursor-pointer"
+          onclick="toggleSubmenu('gioithieu')"
+        >
+          <span class="text-[16px] text-[#303030] font-medium">Giới thiệu</span>
+          <i
+            class="fas fa-chevron-down transform transition-transform"
+            id="gioithieu-icon"
+          ></i>
+        </div>
+        <div id="gioithieu-submenu" class="hidden pl-4 pb-2 space-y-2">
+          <a
+            href="/GeneralIntroduction.html"
+            class="block py-2 text-[14px] text-gray-600"
+          >
+            Thông tin chung
+          </a>
+          <a
+            href="/OrganizationalChart.html"
+            class="block py-2 text-[14px] text-gray-600"
+          >
+            Sơ đồ tổ chức
+          </a>
+        </div>
+      </div>
+
+      <!-- Sản phẩm -->
+      <div class="border-b border-gray-200">
+        <div
+          class="flex justify-between items-center py-4 cursor-pointer"
+          onclick="toggleSubmenu('sanpham')"
+        >
+          <span class="text-[16px] text-[#303030] font-medium">Sản phẩm</span>
+          <i
+            class="fas fa-chevron-down transform transition-transform"
+            id="sanpham-icon"
+          ></i>
+        </div>
+        <div id="sanpham-submenu" class="hidden pl-4 pb-2 space-y-2">
+          <a href="/Product.html" class="block py-2 text-[14px] text-gray-600">
+            Hệ sinh thái học liệu số
+          </a>
+          <a
+            href="/ReferenceBooks.html"
+            class="block py-2 text-[14px] text-gray-600"
+          >
+            Sách tham khảo
+          </a>
+        </div>
+      </div>
+
+      <!-- Góc cổ đông -->
+      <div class="border-b border-gray-200">
+        <a
+          href="/ShareholdersCorner.html"
+          class="block py-4 text-[16px] text-[#303030] font-medium"
+        >
+          Góc cổ đông
+        </a>
+      </div>
+
+      <!-- Tin tức -->
+      <div class="border-b border-gray-200">
+        <a
+          href="/News.html"
+          class="block py-4 text-[16px] text-[#303030] font-medium"
+        >
+          Tin tức
+        </a>
+      </div>
+
+      <!-- Liên hệ -->
+      <div class="border-b border-gray-200">
+        <a
+          href="/Contact.html"
+          class="block py-4 text-[16px] text-[#303030] font-medium"
+        >
+          Liên hệ
+        </a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- Overlay -->
+<div
+  id="menuOverlay"
+  class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden md:hidden cursor-pointer"
+  onclick="closeMobileMenu()"
+></div>
+
+<style>
+  /* Custom styles for mobile menu */
+  #mobileMenu.show {
+    transform: translateX(0);
+  }
+
+  #mobileMenu {
+    transform: translateX(100%);
+  }
+
+  /* Smooth transitions */
+  .transform {
+    transition: transform 0.3s ease;
+  }
+</style>

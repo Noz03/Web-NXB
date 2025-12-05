@@ -1,0 +1,91 @@
+<div class="banner mt-[21px]">
+  <div
+    class="zoom-compress relative h-[216px] lg:h-[719px]"
+    style="
+      background-image: url(assets/image/banner.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    <!-- <img
+      class="w-full h-auto object-cover"
+      src="assets/image/banner.png"
+      alt="Banner hình ảnh"
+    /> -->
+    <button
+      class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-black p-2 px-4 rounded-full hover:bg-opacity-75"
+      onclick="prevImage()"
+    >
+      &#10094;
+    </button>
+    <button
+      class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-black p-2 rounded-full hover:bg-opacity-75 px-4"
+      onclick="nextImage()"
+    >
+      &#10095;
+    </button>
+  </div>
+
+  <div class="zoom-compress flex">
+    <div class="header-1280px lg:max-w-[calc(100%-33.75rem)] mx-auto">
+      <img
+        class="w-full h-auto object-cover hidden lg:block"
+        src="/assets//image/company-overview.png"
+        alt=""
+      />
+      <img
+        class="w-full h-auto object-cover height-zoom-full lg:hidden"
+        src="assets/image/company-member.png"
+        alt=""
+      />
+
+      <div
+        class="mt-[26px] text-[20px] font-normal text-[#303030] hidden lg:block padding-20px-pc-1024"
+      >
+        <p
+          class="!mt-0 text-justify"
+          style="line-height: 26px; letter-spacing: 0%"
+        >
+          Công ty Cổ phần Dịch vụ Xuất bản Giáo dục Hà Nội (HEPS) là đơn vị
+          thành viên của Nhà xuất bản Giáo dục Việt Nam (NXBGDVN), hoạt động
+          theo mô hình Công ty mẹ – Công ty con, được thành lập theo Quyết định
+          số 227/QĐ-NXBGD ngày 27/02/2009 của Tổng Giám đốc NXBGDVN.
+        </p>
+        <p
+          class="!mt-[10px] text-justify"
+          style="line-height: 26px; letter-spacing: 0%"
+        >
+          HEPS được thành lập trên cơ sở tách từ khối nội dung của NXBGDVN, quy
+          tụ đội ngũ nòng cốt đã trực tiếp từng tham gia làm sách giáo khoa
+          trong suốt các giai đoạn cải cách giáo dục của đất nước. Đây là sự
+          tiếp nối và kế thừa kinh nghiệm hơn 50 năm (1957 – 2009) làm sách giáo
+          dục của các thế hệ đi trước.
+        </p>
+        <p
+          class="!mt-[10px] text-justify"
+          style="line-height: 26px; letter-spacing: 0%"
+        >
+          Với đội ngũ nhân lực chất lượng cao, Công ty đảm nhận chức năng tổ
+          chức biên soạn, biên tập, thiết kế, minh họa, biên vẽ bản đồ và xuất
+          bản các loại sách giáo khoa, sách tham khảo và các ấn phẩm giáo dục
+          khác, phục vụ trực tiếp cho sự nghiệp đổi mới giáo dục. HEPS hướng tới
+          trở thành đơn vị xuất bản giáo dục chuyên nghiệp, góp phần nâng cao
+          chất lượng dạy và học trong hệ thống giáo dục Việt Nam.
+        </p>
+      </div>
+
+      <div class="hidden lg:flex justify-center mt-[35px]">
+        <button
+          class="button-padding-font-size-14 lg:block w-[180px] text-[24px] bg-fifth rounded-[25px] uppercase text-white font-medium px-[26px] py-[7px]"
+        >
+          Xem thêm
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="w-full flex lg:hidden">
+    <p class="h-5 w-[64.5%] lg:w-[59.5%] bg-secondary border-banner-h-1"></p>
+    <p class="h-[30px] w-[35.5%] lg:w-[37%] bg-fourth border-banner-h-2"></p>
+  </div>
+</div>

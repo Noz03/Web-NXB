@@ -1,0 +1,484 @@
+:root {
+  --primary-color: #13ae5b;
+  --secondary-color: #95cc44;
+  --third-color: #14ae5c;
+  --fourth-color: #009950;
+  --fifth-color: #02542d;
+  --sixth-color: #007234;
+  --black-senary: #303030;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.text-third {
+  color: var(--third-color);
+}
+
+.bg-third {
+  background-color: var(--third-color);
+}
+.text-fourth {
+  color: var(--fourth-color);
+}
+.bg-fourth {
+  background-color: var(--fourth-color);
+}
+
+.border-fourth {
+  border-color: var(--fourth-color);
+}
+
+.text-fifth {
+  color: var(--fifth-color);
+}
+
+.bg-fifth {
+  background-color: var(--fifth-color);
+}
+
+.text-sixth {
+  color: var(--sixth-color);
+}
+
+.bg-sixth {
+  background-color: var(--sixth-color);
+}
+
+.text-black-senary {
+  color: var(--black-senary);
+}
+
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+/* Mobile carousel styles */
+@media (max-width: 640px) {
+  #cards-container {
+    display: block !important;
+    grid-template-columns: none !important;
+  }
+
+  .card-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  .nav-button {
+    transition: all 0.3s ease;
+    min-width: 100px;
+  }
+
+  .nav-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .pagination-dots {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .pagination-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+}
+
+/* Highlight menu item hiện tại */
+.nav ul li.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.nav ul li.active a {
+  color: white;
+}
+
+@media screen and (max-resolution: 86.4dpi) and (min-resolution: 72dpi) {
+  .zoom-compress {
+    max-width: 1800px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .zoom-compress-child {
+    max-width: 100% !important;
+  }
+
+  .text-size-24px-zoom {
+    font-size: 24px !important;
+  }
+
+  .text-size-50px-zoom {
+    font-size: 50px !important;
+  }
+
+  .zoom-margin-right-0px {
+    margin-right: 0px !important;
+  }
+
+  .zoom-width-100-pc {
+    width: 100% !important;
+  }
+
+  .zoom-width-74-pc {
+    width: 74% !important;
+  }
+  .left-zoom---215px {
+    left: -106px !important;
+  }
+
+  .zoom-bottom-134px {
+    bottom: 134px !important;
+  }
+
+  .padding-x-56px-mobile {
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+  }
+}
+
+/* Zoom 75% - scale elements xuống 0.75x */
+@media screen and (max-resolution: 72dpi) and (min-resolution: 57.6dpi) {
+  .zoom-compress {
+    max-width: 1800px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .padding-x-56px-mobile {
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+  }
+
+  .zoom-compress-child {
+    max-width: 100% !important;
+  }
+
+  .text-size-24px-zoom {
+    font-size: 24px !important;
+  }
+
+  .text-size-50px-zoom {
+    font-size: 50px !important;
+  }
+
+  .zoom-margin-right-0px {
+    margin-right: 0px !important;
+  }
+
+  .zoom-width-100-pc {
+    width: 100% !important;
+  }
+
+  .zoom-width-74-pc {
+    width: 74% !important;
+  }
+
+  .left-zoom---215px {
+    left: -106px !important;
+  }
+
+  .zoom-bottom-134px {
+    bottom: 134px !important;
+  }
+}
+
+/* Zoom 67% - scale elements xuống 0.67x */
+@media screen and (max-resolution: 64.3dpi) and (min-resolution: 48dpi) {
+  .zoom-compress {
+    max-width: 1800px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .zoom-compress-child {
+    max-width: 100% !important;
+  }
+
+  .height-zoom-273px {
+    height: 273px !important;
+  }
+
+  .height-zoom-full {
+    height: 100% !important;
+  }
+
+  .text-size-24px-zoom {
+    font-size: 24px !important;
+  }
+
+  .text-size-50px-zoom {
+    font-size: 50px !important;
+  }
+
+  .zoom-margin-right-0px {
+    margin-right: 0px !important;
+  }
+
+  .padding-x-56px-mobile {
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+  }
+
+  .zoom-width-100-pc {
+    width: 100% !important;
+  }
+
+  .zoom-width-74-pc {
+    width: 74% !important;
+  }
+
+  .left-zoom---215px {
+    left: -106px !important;
+  }
+
+  .zoom-bottom-134px {
+    bottom: 134px !important;
+  }
+
+  .padding-x-56px-mobile {
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+  }
+}
+
+/* Zoom 50% - scale elements xuống 0.5x */
+@media screen and (max-resolution: 48dpi) and (min-resolution: 28.8dpi) {
+  .zoom-compress {
+    max-width: 1800px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .padding-x-56px-mobile {
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+  }
+
+  .zoom-compress-child {
+    max-width: 100% !important;
+  }
+
+  .height-zoom-273px {
+    height: 273px !important;
+  }
+  .height-zoom-full {
+    height: 100% !important;
+  }
+
+  .text-size-24px-zoom {
+    font-size: 24px !important;
+  }
+
+  .text-size-50px-zoom {
+    font-size: 50px !important;
+  }
+
+  .zoom-margin-right-0px {
+    margin-right: 0px !important;
+  }
+
+  .zoom-width-100-pc {
+    width: 100% !important;
+  }
+
+  .zoom-width-74-pc {
+    width: 74% !important;
+  }
+
+  .left-zoom---215px {
+    left: -106px !important;
+  }
+
+  .zoom-bottom-134px {
+    bottom: 134px !important;
+  }
+}
+
+/* Zoom 33% - scale elements xuống 0.33x */
+@media screen and (max-resolution: 31.7dpi) and (min-resolution: 19.2dpi) {
+  .zoom-compress {
+    max-width: 1800px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .padding-x-56px-mobile {
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+  }
+
+  .zoom-compress-child {
+    max-width: 100% !important;
+  }
+
+  .height-zoom-273px {
+    height: 273px !important;
+  }
+
+  .height-zoom-full {
+    height: 100% !important;
+  }
+
+  .text-size-24px-zoom {
+    font-size: 24px !important;
+  }
+
+  .text-size-50px-zoom {
+    font-size: 50px !important;
+  }
+
+  .zoom-margin-right-0px {
+    margin-right: 0px !important;
+  }
+
+  .zoom-width-100-pc {
+    width: 100% !important;
+  }
+
+  .zoom-width-74-pc {
+    width: 74% !important;
+  }
+
+  .left-zoom---215px {
+    left: -106px !important;
+  }
+  .zoom-bottom-134px {
+    bottom: 134px !important;
+  }
+}
+
+/* Zoom 25% - scale elements xuống 0.25x */
+@media screen and (max-resolution: 24dpi) {
+  .zoom-compress {
+    max-width: 1800px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .padding-x-56px-mobile {
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+  }
+
+  .zoom-compress-child {
+    max-width: 100% !important;
+  }
+
+  .height-zoom-273px {
+    height: 273px !important;
+  }
+
+  .height-zoom-full {
+    height: 100% !important;
+  }
+
+  .text-size-24px-zoom {
+    font-size: 24px !important;
+  }
+
+  .text-size-50px-zoom {
+    font-size: 50px !important;
+  }
+
+  .zoom-margin-right-0px {
+    margin-right: 0px !important;
+  }
+
+  .zoom-width-100-pc {
+    width: 100% !important;
+  }
+
+  .zoom-width-74-pc {
+    width: 74% !important;
+  }
+
+  .left-zoom---215px {
+    left: -106px !important;
+  }
+
+  .zoom-bottom-134px {
+    bottom: 134px !important;
+  }
+}
+
+/* Smooth transition */
+/* .zoom-compress {
+  transition: transform 0.2s ease-out;
+} */
+
+/* ...existing code... */
+
+/* Zoom 110% - scale elements lên 1.1x */
+@media screen and (min-resolution: 105.6dpi) and (max-resolution: 115.2dpi) {
+  .zoom-text-size-30px {
+    font-size: 26px !important;
+  }
+
+  .zoom-w-50px {
+    width: 50px !important;
+  }
+
+  .zoom-h-65px {
+    height: 65px !important;
+  }
+}
+
+/* Zoom 125% - scale elements lên 1.25x */
+@media screen and (min-resolution: 120dpi) and (max-resolution: 134.4dpi) {
+  .zoom-text-size-30px {
+    font-size: 26px !important;
+  }
+}
+
+/* Zoom 150% - scale elements lên 1.5x */
+@media screen and (min-resolution: 144dpi) and (max-resolution: 163.2dpi) {
+  .zoom-text-size-30px {
+    font-size: 26px !important;
+  }
+}
+
+/* Fix zoom issues */
+@media screen and (min-resolution: 110dpi) {
+  /* .zoom-compress {
+    max-width: 100vw;
+    overflow-x: hidden;
+  } */
+
+  .zoom-margin-right-0px {
+    margin-right: 0px !important;
+  }
+
+  /* .header-1280px {
+    max-width: calc(100vw - 40px);
+  } */
+}

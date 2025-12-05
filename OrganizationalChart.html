@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function(w,d){
+          var m=d.querySelector("meta[name=viewport]"),t;
+          if(!m){m=d.createElement('meta');m.name='viewport';d.head.appendChild(m)}
+          function f(){
+              var realW = Math.min(w.screen.width, w.innerWidth);
+              if(realW < 768){
+                  var r = realW / 576;
+                  if(r > 1) r = 1;
+                  m.content='width=576,initial-scale='+r+',maximum-scale=1,user-scalable=yes';
+              }else{
+                  m.content='width=device-width,initial-scale=1';
+              }
+          }
+          f();       
+          w.addEventListener("resize",function(){clearTimeout(t);t=setTimeout(f,50)});
+          w.addEventListener("orientationchange",function(){setTimeout(f,200)});
+      })(window,document);
+    </script>
+    <noscript>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </noscript>
+    <title>Cơ cấu tổ chức</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="zoom-compress">
+      <div
+        class="zoom-compress-child header-1280px lg:max-w-[calc(100%-34rem)] mx-auto w-full flex items-end mt-[30px] pading-x-20px-mobile px-[49px] md:px-0"
+      >
+        <p
+          class="py-[10px] text-title-header w-full md:w-[64%] bg-secondary text-[24px] md:text-[20px] text-white font-bold flex pl-5 gap-4 uppercase"
+        >
+          <img
+            src="./assets//svg/icon-home.svg"
+            class="w-[28px] h-[23px]"
+            alt=""
+          />
+          <span>GIỚI THIỆU » CƠ CẤU TỔ CHỨC VÀ NHÂN SỰ</span>
+        </p>
+        <p class="hidden md:block h-5 w-[36%] bg-fourth"></p>
+      </div>
+      <div
+        class="zoom-compress-child header-1280px lg:max-w-[calc(100%-34rem)] mx-auto mt-[21px]"
+      >
+        <h1
+          class="text-fourth font-bold text-xl md:text-2xl mb-2 pading-x-20px-mobile px-[49px] lg:px-0 uppercase"
+        >
+          Cơ cấu tổ chức và nhân sự
+        </h1>
+        <p
+          class="font-light textx-[15px] text-xs italic mb-[17px] lg:mb-5 !mt-[4px] pading-x-20px-mobile px-[49px] lg:px-0"
+        >
+          THỨ HAI, 08/09/2025 | 5:00
+        </p>
+
+        <!-- Hero Image -->
+        <div class="w-full flex flex-col lg:flex-row gap-[14px]">
+          <div class="w-full lg:w-[65%] relative">
+            <img
+              src="/assets//image/diagram-GeneralIntroduction.jpg"
+              alt="Công ty HEPS"
+              class="hidden md:block w-full h-[502px] height-100-percent"
+            />
+
+            <h2
+              class="hidden md:block absolute top-[25px] text-size-16px left-[25px] uppercase text-2xl text-third font-bold"
+            >
+              I. SƠ ĐỒ CƠ CẤU TỔ CHỨC
+            </h2>
+          </div>
+          <div class="relative lg:w-[35%]">
+            <img
+              src="/assets//image//educational-services.png"
+              class="w-full"
+              alt=""
+            />
+            <img
+              class="block md:hidden w-full"
+              src="/assets/image/educational-services-mobile.png"
+              alt=""
+            />
+            <img
+              src="/assets//image/member.png"
+              class="md:h-[360px] w-full relative mt-[1px] xl:mt-[9px]"
+              alt=""
+            />
+
+            <div
+              class="hidden md:block absolute bottom-0 zoom-bottom-134px right-0 transform"
+            >
+              <button
+                class="bg-fifth text-white w-[180px] h-[50px] rounded-full text-[24px] font-medium hover:bg-green-700 transition-colors shadow-lg border border-white"
+              >
+                XEM THÊM
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:mt-[134px]" id="footer"></div>
+  </body>
+
+  <script src="/js/Organizational.js"></script>
+</html>

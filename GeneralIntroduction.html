@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function(w,d){
+          var m=d.querySelector("meta[name=viewport]"),t;
+          if(!m){m=d.createElement('meta');m.name='viewport';d.head.appendChild(m)}
+          function f(){
+              var realW = Math.min(w.screen.width, w.innerWidth);
+              if(realW < 768){
+                  var r = realW / 576;
+                  if(r > 1) r = 1;
+                  m.content='width=576,initial-scale='+r+',maximum-scale=1,user-scalable=yes';
+              }else{
+                  m.content='width=device-width,initial-scale=1';
+              }
+          }
+          f();       
+          w.addEventListener("resize",function(){clearTimeout(t);t=setTimeout(f,50)});
+          w.addEventListener("orientationchange",function(){setTimeout(f,200)});
+      })(window,document);
+    </script>
+    <noscript>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </noscript>
+    <title>Thông tin chung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body cl>
+    <div id="header"></div>
+
+    <div class="zoom-compress">
+      <!-- Breadcrumb -->
+      <div
+        class="header-1280px zoom-compress-child lg:max-w-[calc(100%-33.75rem)] mx-auto flex items-end mt-[34px] pading-system px-[49px] pading-x-20px-mobile lg:px-0"
+      >
+        <p
+          class="py-[8px] md:w-[65%] title-introduce w-full bg-secondary text-[24px] md:text-[20px] text-white font-bold flex pl-5 uppercase flex gap-4"
+        >
+          <img
+            src="./assets//svg/icon-home.svg"
+            class="w-[28px] h-[23px]"
+            alt=""
+          />
+          <span>GIỚI THIỆU » THÔNG TIN CHUNG</span>
+        </p>
+        <p class="hidden md:block h-5 w-[35%] bg-fourth"></p>
+      </div>
+
+      <!-- Main Content -->
+      <div
+        class="header-1280px zoom-compress-child lg:max-w-[calc(100%-34rem)] mx-auto lg:-0 pt-[21px]"
+      >
+        <h1
+          class="text-fourth font-bold text-2xl text-size-20px-mobile mb-2 pading-x-20px-mobile px-[49px] lg:px-0"
+        >
+          GIỚI THIỆU VỀ CÔNG TY CỔ PHẦN DỊCH VỤ XUẤT BẢN GIÁO DỤC HÀ NỘI (HEPS)
+        </h1>
+        <p
+          class="font-light text-[15px] lg:text-xs italic !mb-[17px] lg:!mb-[10px] !mt-[4px] px-[49px] lg:px-0"
+        >
+          THỨ HAI, 08/09/2025 | 5:00
+        </p>
+
+        <!-- Hero Image -->
+        <div
+          class="w-full mb-[39px] lg:mb-[48px] relative pading-x-20px-mobile px-[49px] lg:px-0"
+        >
+          <img
+            src="/assets//image/company-overview.png"
+            alt="Công ty HEPS"
+            class="w-full h-auto"
+          />
+          <div
+            class="hidden lg:block absolute bottom-[34px] left-1/2 transform -translate-x-1/2"
+          >
+            <button
+              class="bg-fifth text-white border border-white w-[180px] h-[50px] text-2xl rounded-full font-semibold hover:bg-green-700 transition-colors shadow-lg"
+            >
+              XEM THÊM
+            </button>
+          </div>
+        </div>
+
+        <!-- Company Title -->
+        <div class="hidden lg:block text-center mb-[41px]">
+          <h2 class="text-green-600 font-bold text-[36px]">CÔNG TY CỔ PHẦN</h2>
+          <h2 class="text-green-600 font-bold text-[36px]">
+            DỊCH VỤ XUẤT BẢN GIÁO DỤC HÀ NỘI
+          </h2>
+        </div>
+
+        <div class="text-center mb-[39px] px-[49px] lg:px-0 lg:hidden">
+          <h2
+            class="text-green-600 font-bold text-size-20px-mobile text-[30px]"
+          >
+            CÔNG TY CỔ PHẦN DỊCH VỤ
+          </h2>
+          <h2
+            class="text-green-600 font-bold text-size-20px-mobile text-[30px]"
+          >
+            XẤT BẢN GIÁO DỤC HÀ NỘI
+          </h2>
+        </div>
+
+        <!-- Company Description -->
+        <div
+          class="bg-[#E7F1D4] pt-[51px] lg:pt-[54px] pading-x-20px-mobile px-[64px] lg:px-[65px] mb-[39px] lg:mb-[14px]"
+        >
+          <p
+            class="text-[#303030] text-size-14px text-[20px] leading-relaxed mb-[31px] h-[288px] lg:h-auto overflow-hidden !mt-[0px]"
+            style="line-height: 26px; letter-spacing: 0%"
+          >
+            Công ty Cổ phần Dịch vụ Xuất bản Giáo dục Hà Nội (HEPS) là đơn vị
+            thành viên của Nhà xuất bản Giáo dục Việt Nam (NXBGDVN), hoạt động
+            theo mô hình Công ty mẹ – Công ty con, được thành lập theo Quyết
+            định số 227/QĐ-NXBGD ngày 27/02/2009 của Tổng Giám đốc NXBGDVN. HEPS
+            được thành lập trên cơ sở tách từ khối nội dung của NXBGDVN, quy tụ
+            đội ngũ nòng cốt đã trực tiếp từng tham gia làm sách giáo khoa trong
+            suốt các giai đoạn cải cách giáo dục của đất nước. Đây là sự tiếp
+            nối và kế thừa kinh nghiệm hơn 50 năm (1957 – 2009) làm sách giáo
+            dục của các thế hệ đi trước. Với đội ngũ nhân lực chất lượng cao,
+            Công ty đảm nhận chức năng tổ chức biên soạn, biên tập, thiết kế,
+            minh họa, biên vẽ bản đồ và xuất bản các loại sách giáo khoa, sách
+            tham khảo và các ấn phẩm giáo dục khác, phục vụ trực tiếp cho sự
+            nghiệp đổi mới giáo dục. HEPS hướng tới trở thành đơn vị xuất bản
+            giáo dục chuyên nghiệp, góp phần nâng cao chất lượng dạy và học
+            trong hệ thống giáo dục Việt Nam.
+          </p>
+          <div class="text-center">
+            <button
+              class="bg-fifth text-white button-padding-font-size-14-mobile border border-white w-[180px] h-[50px] text-2xl rounded-full mb-[31px] font-medium hover:bg-green-700 transition-colors shadow-lg"
+            >
+              XEM THÊM
+            </button>
+          </div>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div
+          class="flex flex-col md:flex-row justify-between gap-[14px] items-start"
+        >
+          <!-- Left Column - Company Info -->
+          <div
+            class="w-full lg:w-[65%] flex flex-col bg-[#E7F1D4] pading-x-20px-mobile pl-[67px] pr-[42px] py-[35px] hight-new-item relative overflow-hidden h-auto md:h-[1789px]"
+          >
+            <div class="text-[20px] text-size-14px !mt-0">
+              <p style="line-height: 26px; letter-spacing: 0%">
+                – Tên gọi: CÔNG TY CỔ PHẦN DỊCH VỤ XUẤT BẢN GIÁO DỤC HÀ NỘI
+              </p>
+              <p style="line-height: 26px; letter-spacing: 0%">
+                – Tên tiếng Anh: Hanoi education Publishing Services Joint Stock
+                Company
+              </p>
+              <p style="line-height: 26px; letter-spacing: 0%">
+                – Tên viết tắt: HEPS., JSC
+              </p>
+              <p style="line-height: 26px; letter-spacing: 0%">
+                – Trụ sở chính: Tầng 4, Toà Diamond Flower, số 48 Lê Văn Lương,
+                phường Nhân Chính, quận Thanh Xuân, TP. Hà Nội
+              </p>
+              <p style="line-height: 26px; letter-spacing: 0%">
+                – Điện thoại: (84.4) 3512 1533
+              </p>
+              <p style="line-height: 26px; letter-spacing: 0%">
+                – Website: www.xbgdhn.vn
+              </p>
+              <p style="line-height: 26px; letter-spacing: 0%">
+                – Email: kinhdoanh.heps@gmail.com
+              </p>
+              <p style="line-height: 26px; letter-spacing: 0%">
+                - Vốn điều lệ<strong> 25.000.000.000 đồng</strong> (Hai mươi lăm
+                tỷ đồng)
+              </p>
+              <img
+                class="block md:hidden mt-[26px] mb-[43px]"
+                src="/assets/image/company.png"
+                alt=""
+              />
+            </div>
+
+            <div class="space-y-2 mt-[18px]">
+              <h4 class="text-green-600 font-bold text-2xl text-size-20px mb-4">
+                1. Lịch sử hình thành:
+              </h4>
+              <p
+                class="text-[20px] text-justify text-size-14px h-[184px] lg:h-auto overflow-hidden !mt-0"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                <strong
+                  >Công ty Cổ phần Dịch vụ Xuất bản Giáo dục Hà Nội
+                  (HEPS)</strong
+                >
+                được thành lập theo Quyết định số 227/QĐNXBGD ngày 27/02/2009
+                của Tổng Giám đốc Nhà xuất bản Giáo dục Việt Nam (NXBGDVN). Là
+                đơn vị thành viên hoạt động theo mô hình Công ty mẹ – Công ty
+                con, HEPS chính là cánh tay nối dài trong chiến lược phát triển
+                của NXBGDVN, đảm nhiệm vai trò trọng yếu trong lĩnh vực biên
+                soạn và xuất bản sách giáo khoa (SGK).
+              </p>
+
+              <p
+                class="text-[20px] text-size-14px !mt-[8px] text-justify hidden md:block"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                Được tách ra từ khối nội dung của NXBGDVN, HEPS quy tụ đội ngũ
+                chủ lực từng tham gia biên soạn SGK trong suốt các giai đoạn cải
+                cách giáo dục của đất nước. Nền tảng ấy là sự tiếp nối và kế
+                thừa kinh nghiệm hơn 50 năm (1957 – 2009) làm sách giáo dục của
+                các thế hệ đi trước.
+              </p>
+
+              <div
+                class="justify-center items-center !mb-[86px] !mt-[42px] flex md:hidden"
+              >
+                <button
+                  class="bg-fifth text-white button-padding-font-size-14-mobile border border-white w-[180px] h-[50px] rounded-full text-2xl font-medium hover:bg-green-700 transition-colors shadow-lg"
+                >
+                  XEM THÊM
+                </button>
+              </div>
+
+              <p
+                class="text-[20px] text-size-14px !mt-[18px] text-justify hidden md:block"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                Năm 2018, khi Bộ Giáo dục và Đào tạo ban hành Chương trình Giáo
+                dục phổ thông mới, HEPS một lần nữa được giao trọng trách tiên
+                phong: tổ chức biên soạn bộ sách giáo khoa
+                <strong> “Kết nối tri thức với cuộc sống” –</strong> một trong
+                những bộ sách quan trọng của giai đoạn đổi mới SGK lần thứ Tư.
+                Bộ sách đã được Hội đồng quốc gia thẩm định thông qua, được các
+                thầy cô, phụ huynh và học sinh đánh giá cao
+              </p>
+
+              <p
+                class="text-[20px] text-size-14px !mt-[18px] text-justify hidden md:block"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                Bên cạnh SGK, Công ty cũng chú trọng xuất bản các loại hình sản
+                phẩm khác như:
+                <strong>Sách tham khảo, Sách chuyên khảo,…</strong> đáp ứng đa
+                dạng nhu cầu học tập và giảng dạy trong bối cảnh giáo dục ngày
+                càng thay đổi nhanh chóng
+              </p>
+
+              <p
+                class="text-[20px] text-size-14px !mt-[18px] text-justify hidden md:block"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                HEPS luôn đặt mục tiêu đổi mới toàn diện để thích ứng với xu thế
+                giáo dục hiện đại và yêu cầu thực tiễn của thị trường. Là đơn vị
+                được giao nhiệm vụ phát triển trên nguyên tắc vận hành theo cơ
+                chế thị trường, Công ty đã không ngừng năng động, sáng tạo để mở
+                rộng quy mô hoạt động, nâng cao chất lượng sản phẩm và dịch vụ.
+              </p>
+              <p
+                class="flex flex-col text-size-14px text-[20px] !mt-[18px] text-justify hidden md:block"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                <span
+                  >Trong hành trình phía trước, HEPS tiếp tục thực hiện sứ
+                  mệnh:</span
+                >
+                <span>− Đồng hành cùng đổi mới giáo dục quốc gia; </span>
+                <span
+                  >− Phát triển đội ngũ biên tập viên, chuyên gia giáo dục tinh
+                  hoa;
+                </span>
+                <span
+                  >− Khẳng định vị trí là đơn vị tiên phong trong xuất bản SGK
+                  tại Việt Nam;
+                </span>
+                <span
+                  >− Góp phần lan tỏa tri thức, nâng tầm thương hiệu Nhà xuất
+                  bản Giáo dục Việt Nam
+                </span>
+              </p>
+
+              <p
+                class="text-[20px] text-size-14px !mt-[18px] text-justify hidden md:block"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                Với kinh nghiệm, năng lực và tâm huyết, HEPS luôn sẵn sàng hợp
+                tác với các đối tác trong và ngoài nước trong lĩnh vực biên
+                soạn, xuất bản, phát hành sách giáo dục và các sản phẩm tri
+                thức. Đội ngũ chuyên viên, biên tập viên và tư vấn của chúng tôi
+                luôn sẵn lòng đồng hành, hỗ trợ quý khách hàng mọi lúc, mọi nơi.
+              </p>
+            </div>
+
+            <div class="mt-[29px] hidden md:block">
+              <h3
+                class="text-[#14AE5C] text-2xl text-size-20px font-bold hidden md:block"
+              >
+                2. Định hướng phát triển và mục tiêu chiến lược
+              </h3>
+              <p
+                class="flex flex-col text-size-14px text-[20px] !mt-[18px]"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                <strong>* Tầm nhìn </strong>
+                <span
+                  >Trở thành đơn vị quy mô, chất lượng và uy tín hàng đầu trong
+                  lĩnh vực xuất bản sách giáo dục Việt Nam</span
+                >
+              </p>
+
+              <p
+                class="flex flex-col text-size-14px text-[20px] !mt-[18px]"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                <strong>* Sứ mệnh </strong>
+                <span
+                  >Cung cấp dịch vụ, sản phẩm chuyên nghiệp, đồng bộ và hiệu quả
+                  trong lĩnh vực xuất bản giáo dục, góp phần nâng cao chất lượng
+                  sách giáo dục và công cuộc đổi mới giáo dục quốc gia.
+                </span>
+              </p>
+
+              <p
+                class="flex flex-col text-size-14px text-[20px] !mt-[18px] text-justify"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                <strong>* Giá trị cốt lõi </strong>
+                <span style="line-height: 26px; letter-spacing: 0%"
+                  >− Chất lượng: Cam kết tạo ra sản phẩm và dịch vụ đạt chất
+                  lượng cao. Mỗi công đoạn đều được kiểm soát chặt chẽ, chính
+                  xác, đầy đủ và phù hợp với người sử dụng.</span
+                >
+                <span style="line-height: 26px; letter-spacing: 0%"
+                  >− Chuẩn mực: Hoạt động theo các nguyên tắc chuyên môn, tuân
+                  thủ quy định pháp luật và đạo đức nghề nghiệp.</span
+                >
+                <span style="line-height: 26px; letter-spacing: 0%"
+                  >− Uy tín: Lấy uy tín làm nền tảng cho sự phát triển bền vững.
+                  Cam kết với khách hàng, đối tác và người lao động về chất
+                  lượng, tiến độ và tinh thần trách nhiệm.</span
+                >
+              </p>
+            </div>
+
+            <!-- Mobile See More Button -->
+          </div>
+
+          <!-- Right Column - Building Image -->
+          <div
+            class="hidden lg:flex justify-center flex-col gap-[16px] items-start w-full lg:w-[35%]"
+          >
+            <div class="w-full relative">
+              <img
+                src="../../assets/image/company.png"
+                alt="Tòa nhà công ty"
+                class="w-full h-[573px]"
+              />
+              <div class="absolute right-0 bottom-0 text-center mt-4">
+                <button
+                  class="transform bg-fifth text-white w-[180px] h-[50px] text-[24px] rounded-full font-medium hover:bg-green-700 transition-colors border border-white"
+                >
+                  XEM THÊM
+                </button>
+              </div>
+            </div>
+
+            <div class="w-full relative">
+              <img
+                src="../../assets/image/staff.png"
+                alt="Tòa nhà công ty"
+                class="w-full h-[530px]"
+              />
+              <div class="absolute right-0 bottom-0 text-center mt-4">
+                <button
+                  class="transform bg-fifth text-white w-[180px] h-[50px] rounded-full text-[24px] font-medium hover:bg-green-700 transition-colors border border-white"
+                >
+                  XEM THÊM
+                </button>
+              </div>
+            </div>
+
+            <div class="w-full relative">
+              <img
+                src="../../assets/image/manager.png"
+                alt="Tòa nhà công ty"
+                class="w-full h-[654px]"
+              />
+              <div class="absolute right-0 bottom-0 text-center mt-4">
+                <button
+                  class="transform bg-fifth text-white w-[180px] h-[50px] rounded-full text-[24px] font-medium hover:bg-green-700 transition-colors border border-white"
+                >
+                  XEM THÊM
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:mt-[136px]" id="footer"></div>
+    <script src="/js/introduction.js"></script>
+  </body>
+</html>

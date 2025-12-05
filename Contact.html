@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function(w,d){
+          var m=d.querySelector("meta[name=viewport]"),t;
+          if(!m){m=d.createElement('meta');m.name='viewport';d.head.appendChild(m)}
+          function f(){
+              var realW = Math.min(w.screen.width, w.innerWidth);
+              if(realW < 768){
+                  var r = realW / 576;
+                  if(r > 1) r = 1;
+                  m.content='width=576,initial-scale='+r+',maximum-scale=1,user-scalable=yes';
+              }else{
+                  m.content='width=device-width,initial-scale=1';
+              }
+          }
+          f();       
+          w.addEventListener("resize",function(){clearTimeout(t);t=setTimeout(f,50)});
+          w.addEventListener("orientationchange",function(){setTimeout(f,200)});
+      })(window,document);
+    </script>
+    <noscript>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </noscript>
+    <title>Liên Hệ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header"></header>
+    <!-- Main content -->
+    <main
+      id="main-content"
+      class="zoom-compress lg:max-w-[calc(100%-33.75rem)] header-1280px mx-auto mt-[34px] px-4 sm:px-6 lg:px-0"
+    >
+      <div class="flex flex-col lg:flex-row gap-[32px]">
+        <div class="w-full lg:w-[69%]">
+          <div class="w-full flex items-end bg-secondary py-[2px]">
+            <p
+              class="text-white text-[20px] md:text-[20px] font-bold flex items-center pl-5 uppercase py-[8px] line-height-p-100 gap-4"
+            >
+              <!-- <i class="fa fa-home mr-3" aria-hidden="true"></i> LIÊN HỆ -->
+              <img
+                src="./assets//svg/icon-home.svg"
+                class="w-[28px] h-[23px]"
+                alt=""
+              />
+              <span>LIÊN HỆ</span>
+            </p>
+          </div>
+
+          <h1 class="uppercase text-[24px] font-bold text-[#009950] mt-[28px]">
+            Liên hệ
+          </h1>
+          <p class="font-light text-xs italic px-4 md:px-0 !mt-[4px]">
+            THỨ HAI, 08/09/2025 | 5:00
+          </p>
+          <div
+            class="mt-[101px] md:mt-[101px] flex flex-col md:flex-row gap-[36px] items-start md:items-end"
+          >
+            <div>
+              <img
+                src="./assets/svg/logo-svg.svg"
+                class="h-[147px] w-[111px] mx-auto md:mx-0"
+                alt=""
+              />
+              <p
+                class="line-height-p-100 uppercase text-[24px] font-bold text-[#02542D] mt-[29px] text-center md:text-left"
+              >
+                CÔNG TY CỔ PHẦN
+              </p>
+
+              <p
+                class="line-height-p-100 uppercase text-[24px] font-bold text-[#02542D] mb-[16px] text-center md:text-left"
+              >
+                DỊCH VỤ XUẤT BẢN GIÁO DỤC HÀ NỘI
+              </p>
+
+              <img
+                src="/assets//image/contact.png"
+                class="w-[509px] h-[149px] mx-auto md:mx-0"
+                alt=""
+              />
+            </div>
+            <div class="mt-4 md:mt-0">
+              <p
+                class="line-height-p-100 text-[15px] text-black-senary font-bold"
+              >
+                Địa chỉ
+              </p>
+              <p class="font-normal text-[13px] mt-[8px] line-height-p-100">
+                Tầng 4, Tòa nhà Diamond Flower,
+              </p>
+              <p class="font-normal !mt-0 text-[13px] line-height-p-100">
+                số 48 Lê Văn Lương, P. Yên Hòa, TP. Hà Nội, Việt Nam
+              </p>
+              <p
+                class="line-height-p-100 text-[15px] text-black-senary font-bold mt-[18px]"
+              >
+                Điện thoại
+              </p>
+              <p class="font-light text-[13px] mt-[8px] line-height-p-100">
+                024.35121533( số máy lẻ 118) - 0904893398
+              </p>
+              <p class="font-light text-[13px] !mt-0 line-height-p-100">
+                Fax: 024.35123278
+              </p>
+              <p
+                class="line-height-p-100 text-[15px] text-black-senary font-bold mt-[18px]"
+              >
+                Email
+              </p>
+              <p class="font-light text-[13px] mt-[8px]">
+                kinhdoanh_heps@gmail.com
+              </p>
+              <p
+                class="line-height-p-100 text-[15px] text-black-senary font-bold mt-[18px]"
+              >
+                Website
+              </p>
+              <p class="font-light text-[13px] mt-[8px]">http://xbgdhn.vn</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full lg:w-[30%] flex justify-center px-[45px] pading-px-form lg:px-0 mt-[62px] lg:mt-[62px]"
+        >
+          <div
+            class="bg-[#00AA4F] rounded-[20px] shadow-2xl px-[24px] pb-[43px] mt-3 lg:mt-0 w-full max-w-[400px]"
+          >
+            <h4
+              class="text-[24px] font-bold text-white text-center mt-[57px] mb-[30px]"
+            >
+              Thông Tin Đăng Ký
+            </h4>
+            <form action="#">
+              <div class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <input
+                    id="fullName"
+                    type="text"
+                    placeholder="Họ và tên"
+                    class="w-full bg-white rounded-md px-5 p-3 py-2 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+                  />
+                  <input
+                    id="phone"
+                    type="tel"
+                    placeholder="Số điện thoại"
+                    class="w-full bg-white rounded-md p-3 py-2 px-5 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+                  />
+                </div>
+
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                  class="w-full bg-white rounded-md p-3 py-2 px-5 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+                />
+
+                <input
+                  id="address"
+                  type="text"
+                  placeholder="Địa chỉ"
+                  class="w-full bg-white rounded-md p-3 py-2 px-5 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+                />
+
+                <div class="relative w-full">
+                  <select
+                    id="registrationContent"
+                    class="w-full bg-white rounded-md p-3 py-2 px-5 text-gray-400 placeholder-[#B8B8B8] appearance-none focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+                  >
+                    <option value="" disabled selected class="text-gray-400">
+                      Nội dung đăng ký
+                    </option>
+                    <option value="course1" class="text-gray-700">
+                      Khóa học 1
+                    </option>
+                    <option value="course2" class="text-gray-700">
+                      Khóa học 2
+                    </option>
+                    <option value="consultation" class="text-gray-700">
+                      Tư vấn
+                    </option>
+                    <option value="other" class="text-gray-700">Khác</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700"
+                  >
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <textarea
+                  id="notes"
+                  placeholder="Ghi chú (Nếu có)"
+                  rows="3"
+                  class="w-full bg-white rounded-md p-3 px-5 pt-5 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow resize-none"
+                ></textarea>
+              </div>
+
+              <div class="flex justify-center mt-[38px]">
+                <button
+                  type="submit"
+                  class="bg-fifth text-white font-medium tracking-wider py-[13px] px-[29px] rounded-lg hover:bg-[#004d2a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#05a357] focus:ring-white see-more-button transition-all duration-300 ease-in-out transform hover:scale-105 text-[24px] pading-px-button text-size-16px"
+                >
+                  ĐĂNG KÝ NGAY
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="mt-[117px]"></footer>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

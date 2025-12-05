@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function(w,d){
+          var m=d.querySelector("meta[name=viewport]"),t;
+          if(!m){m=d.createElement('meta');m.name='viewport';d.head.appendChild(m)}
+          function f(){
+              var realW = Math.min(w.screen.width, w.innerWidth);
+              if(realW < 768){
+                  var r = realW / 576;
+                  if(r > 1) r = 1;
+                  m.content='width=576,initial-scale='+r+',maximum-scale=1,user-scalable=yes';
+              }else{
+                  m.content='width=device-width,initial-scale=1';
+              }
+          }
+          f();       
+          w.addEventListener("resize",function(){clearTimeout(t);t=setTimeout(f,50)});
+          w.addEventListener("orientationchange",function(){setTimeout(f,200)});
+      })(window,document);
+    </script>
+    <noscript>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </noscript>
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="min-h-screen">
+    <div id="header"></div>
+    <div id="banner"></div>
+    <div class="flex lg:hidden justify-center">
+      <div
+        class="zoom-compress header-1280px xl:max-w-[calc(100%-41rem)] mx-auto mt-[29px] lg:mt-[32px] pading-system md:px-0 pading-x-20px"
+      >
+        <h2
+          class="text-[30px] text-size-24px title-company icon-header lg:text-[36px] text-center font-bold text-third mb-4 uppercase pading-0-system px-[53px] md:px-0 lg:px-0 text-20px-450px"
+        >
+          <p class="block md:inline">CÔNG TY CỔ PHẦN DỊCH VỤ</p>
+          <p class="block md:inline">XẤT BẢN GIÁO DỤC HÀ NỘI</p>
+        </h2>
+
+        <div
+          class="flex flex-col lg:flex-row justify-between mt-[39px] md:mt-[41px] lg:gap-[10px] pading-0-system px-[57px] md:px-[20px]"
+        >
+          <nav class="w-full lg:w-1/2 flex flex-col">
+            <!-- <div>
+              <p
+                class="text-[30px] text-size-14px xl:text-[24px] title-introduce font-bold text-third flex items-start"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                <span>*</span>
+                <span>Tầm nhìn</span>
+              </p>
+              <p
+                class="text-[20px] text-size-12px title-introduce-content text-black-senary mt-[19px] md:mt-[16px] font-normal text-justify"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                Trở thành đơn vị quy mô, chất lượng và uy tín hàng đầu trong
+                lĩnh vực xuất bản sách giáo dục tại Việt Nam
+              </p>
+            </div>
+
+            <div class="mt-[31px] magin-top-0px">
+              <p
+                class="text-[30px] text-size-14px xl:text-[24px] title-introduce font-bold text-third flex items-start"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                <span>*</span>
+                <span>Sứ mệnh</span>
+              </p>
+              <p
+                class="text-[20px] magin-top-0px text-size-12px title-introduce-content mt-[19px] md:mt-[16px] font-normal text-justify"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                Cung cấp dịch vụ, sản phẩm chuyên nghiệp, đồng bộ và hiệu quả
+                trong lĩnh vực xuất bản giáo dục, góp phần nâng cao chất lượng
+                sách giáo dục và công cuộc đổi mới giáo dục quốc gia
+              </p>
+            </div> -->
+
+            <div>
+              <p
+                class="!mt-0 text-justify text-[20px] font-normal text-black-senary text-16px-450px"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                Công ty Cổ phần Dịch vụ Xuất bản Giáo dục Hà Nội (HEPS) là đơn
+                vị thành viên của Nhà xuất bản Giáo dục Việt Nam (NXBGDVN), hoạt
+                động theo mô hình Công ty mẹ – Công ty con, được thành lập theo
+                Quyết định số 227/QĐ-NXBGD ngày 27/02/2009 của Tổng Giám đốc
+                NXBGDVN
+              </p>
+
+              <p
+                class="mt-[15px] text-justify text-[20px] font-normal text-black-senary text-16px-450px"
+                style="line-height: 26px; letter-spacing: 0%"
+              >
+                HEPS được thành lập trên cơ sở tách từ khối nội dung của
+                NXBGDVN, quy tụ đội ngũ nòng cốt đã trực tiếp từng tham gia làm
+                sách giáo khoa...
+              </p>
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="button-padding-font-size-14 lg:block w-[180px] mt-[60px] text-[24px] bg-fifth rounded-[25px] uppercase text-white font-medium px-[26px] py-[7px] button-padding"
+              >
+                Xem thêm
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="zoom-compress bg-url pading-x-20px flex items-center mt-[43px] lg:mt-[53px]"
+    >
+      <div
+        class="header-1280px w-full wrapper-bg-mobile flex justify-between lg:max-w-[calc(100%-15rem)] mx-auto text-white flex-col lg:flex-row gap-[41px]"
+      >
+        <div class="lineHeight flex flex-col items-center lg:pl-0 xl:ml-[20px]">
+          <p
+            class="font-bold line text-[67px] text-size-50px-zoom text-size-40px flex items-center"
+          >
+            <img
+              class="w-[52px] h-[48px] mr-[16px]"
+              src="assets/icon/publish.png"
+              alt=""
+            />
+            150+
+          </p>
+          <p
+            class="lineHeight text-[32px] text-size-24px-zoom text-size-24px font-semibold"
+          >
+            Xuất bản phẩm mới mỗi năm
+          </p>
+        </div>
+
+        <div class="lineHeight flex flex-col items-center lg:pl-0">
+          <p
+            class="font-bold line text-[67px] text-size-50px-zoom text-size-40px flex items-center"
+          >
+            <img
+              class="w-[56px] h-[48px] mr-[16px]"
+              src="assets/icon/print.png"
+              alt=""
+            />
+            30.000+
+          </p>
+          <p
+            class="text-[32px] text-size-24px-zoom text-size-24px font-semibold"
+          >
+            Bản in mỗi năm
+          </p>
+        </div>
+
+        <div class="lineHeight flex flex-col items-center lg:pl-0">
+          <p
+            class="font-bold line text-[67px] text-size-24px-zoom text-size-40px flex items-center"
+          >
+            <img
+              class="w-[63px] h-[44px] mr-3"
+              src="assets/icon/hands.png"
+              alt=""
+            />
+            600+
+          </p>
+          <p
+            class="text-[32px] text-size-24px text-size-24px-zoom font-semibold mt-[5px]"
+          >
+            Đội ngũ tác giả, CTV
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex zoom-compress">
+      <p class="h-[30px] w-[35%] lg:w-[32.5%] bg-fourth"></p>
+      <p class="h-5 w-[65%] lg:w-[67.5%] bg-secondary"></p>
+    </div>
+
+    <div class="mt-[47px] flex flex-col items-center">
+      <h1
+        class="block lg:hidden uppercase text-[30px] lg:text-[46px] font-bold text-third text-center pading-system px-[75px] title-company lg:px-0"
+      >
+        <p>HỆ THỐNG SẢN PHẨM</p>
+        <p>GIÁO DỤC CỦA CHÚNG TÔI</p>
+      </h1>
+      <div
+        class="zoom-compress bg-book h-[432px] hight-auto xl:h-[592px] w-full pading-x-20px lg:px-[82px] pading-0-system"
+      >
+        <h1
+          class="hidden text-size-24px lg:block uppercase text-[30px] lg:text-[46px] font-bold text-third text-center px-[75px] lg:px-0 mr-[55px]"
+        >
+          HỆ THỐNG SẢN PHẨM GIÁO DỤC CỦA CHÚNG TÔI
+        </h1>
+        <div class="flex justify-center mt-[95px] lg:mt-[46px]">
+          <div
+            id="books-container"
+            class="lg:justify-center flex gap-[4rem] lg:gap-8 lg:gap-[98px] gap-0-px overflow-x-auto hide-scrollbar items-end lg:overflow-visible xl:pl-[65px] pading-0-system"
+          >
+            <div
+              class="book-item relative flex-center-content w-[318px] h-[308px] lg:h-[443px] hight-auto flex-shrink-0 lg:w-[456px] w-1-3-pc z-index-15"
+              data-book="didactic"
+            >
+              <img
+                class="w-full w-90-pc"
+                src="assets/image/book-didactic.png"
+                alt=""
+              />
+
+              <div
+                class="absolute bottom-[40px] left-[-67px] lg:bottom-[50px] lg:-left-[80px] bg-white px-7 lg:px-10 py-2.5 lg:py-5 pading-x-20px pading-y-10px rounded-full text-size-14px uppercase text-[17px] xl:text-[24px] left-0-px bottom-150px font-bold text-fifth"
+              >
+                SÁCH GIÁO KHOA
+              </div>
+            </div>
+
+            <div
+              class="book-item relative flex-center-content w-[318px] w-1-3-pc h-[308px] hight-auto lg:h-[443px] flex-shrink-0 lg:w-[456px] z-index-10"
+              data-book="reference"
+            >
+              <img
+                class="w-full w-90-pc"
+                src="assets/image/book-reference.png"
+                alt=""
+              />
+
+              <div
+                class="absolute pading-x-20px pading-y-10px bottom-[40px] left-[-67px] lg:bottom-[50px] lg:-left-[90px] bg-white px-7 lg:px-10 py-2.5 lg:py-5 rounded-full text-size-14px uppercase text-[17px] xl:text-[24px] left-0-px bottom-150px font-bold text-fifth"
+              >
+                SÁCH THAM KHẢO
+              </div>
+            </div>
+
+            <div
+              class="book-item relative w-[318px] w-1-3-pc flex-center-content h-[308px] hight-auto lg:h-[443px] flex-shrink-0 lg:w-[456px]"
+              data-book="local"
+            >
+              <img
+                class="w-full w-90-pc"
+                src="assets/image/book-local.png"
+                alt=""
+              />
+
+              <div
+                class="absolute bottom-150px pading-x-20px pading-y-10px text-size-14px bottom-[40px] left-[-67px] lg:bottom-[50px] lg:-left-[74px] bg-white px-7 py-2.5 lg:py-5 rounded-full uppercase text-[17px] xl:text-[24px] left-0-px font-bold text-fifth"
+              >
+                SÁCH ĐỊA PHƯƠNG
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="button-padding-font-size-14 lg:block w-[180px] mt-[7px] text-[24px] bg-fifth rounded-[25px] uppercase text-white font-medium px-[26px] py-[7px] button-padding"
+      >
+        Xem thêm
+      </button>
+    </div>
+
+    <div class="flex lg:hidden w-full py-[65px]">
+      <p class="h-5 w-[65%] bg-secondary"></p>
+      <p class="h-[30px] w-[35%] bg-fourth"></p>
+    </div>
+
+    <div class="zoom-compress w-full">
+      <div
+        class="w-full relative flex flex-col lg:flex-row justify-between lg:mt-[11px] flex-direction-column"
+      >
+        <div
+          class="w-full lg:w-[40%] h-[630px] height-535px lg:h-[882px] height-860px-media-1300px"
+        >
+          <div
+            class="hidden lg:flex absolute top-[70px] lg:top-[28px] right-0 w-full lg:w-full flex z-0"
+          >
+            <p class="h-5 w-[66.5%] bg-secondary"></p>
+            <p class="h-[30px] w-[33.5%] bg-fourth"></p>
+          </div>
+          <div
+            class="relative bg-nav bg-book-width w-[398px] w-335px-1250px lg:w-[558px] w-450px h-full z-10"
+          >
+            <div
+              class="absolute left-70px-1250px left-bobile-book left-138px left-[62px] lg:left-[234px] top-[58px] lg:top-[206px] flex items-center"
+            >
+              <div
+                class="relative left-[15px] z-10 h-[150px] w-[150px] bg-white rounded-full border border-[#95CC44] flex items-center justify-center media-1300-h-w"
+              >
+                <img
+                  class="h-[75px] w-[91px] lg:h-[60px] lg:w-[80px] height-width-450px"
+                  src="assets/icon/leaf.png"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="absolute left-[84px] lg:left-[111px] h-[120px] lg:h-[94px] w-[368px] lg:w-[507px] bg-[#007234] rounded-[21px] outline-dashed-sir pl-[63px] lg:pl-0 uppercase text-3xl text-white font-bold flex items-center justify-center text-font-20px-pc w-400px media-1300-left-70px text-size-18px-450px pading-left-20px-450px left-75px-450px"
+              >
+                <div class="text-center lg:ml-[33px]">
+                  <p class="hidden lg:inline">Học liệu</p>
+                  <p class="text-center mr-3 lg:mr-0 block lg:inline">Sách</p>
+                  <p class="text-center mr-3 lg:mr-0 block lg:inline">
+                    Giáo khoa
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-70px-1250px top-bobile-book left-bobile-book left-138px left-[62px] lg:left-[234px] top-[235px] lg:top-[391px] flex items-center"
+            >
+              <div
+                class="relative left-[15px] z-10 h-[150px] w-[150px] bg-white rounded-full border border-[#95CC44] flex items-center justify-center media-1300-h-w"
+              >
+                <img
+                  class="h-[60px] w-[103px] lg:h-[60px] lg:w-[80px] height-width-450px"
+                  src="assets/icon/book.png"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="absolute left-[84px] lg:left-[111px] h-[120px] lg:h-[94px] w-[368px] lg:w-[507px] bg-[#FFEB3D] rounded-[21px] outline-dashed-sir uppercase text-3xl text-white pl-[10px] font-bold flex items-center pl-[55px] lg:pl-0 justify-center text-font-20px-pc w-400px media-1300-left-70px text-size-18px-450px pading-left-15px-450px left-75px-450px"
+              >
+                <div class="text-center lg:ml-[47px]">
+                  <p class="hidden lg:inline text-[#007234]">Học liệu</p>
+                  <p class="text-center text-[#007234] block lg:inline">SÁCH</p>
+                  <p class="text-center text-[#007234] block lg:inline">
+                    THAM KHẢO
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-70px-1250px left-bobile-book left-138px left-[62px] lg:left-[234px] bottom-[58px] lg:bottom-[156px] flex items-center"
+            >
+              <div
+                class="relative left-[15px] z-10 h-[150px] w-[150px] bg-white rounded-full border border-[#95CC44] flex items-center justify-center media-1300-h-w"
+              >
+                <img
+                  class="h-[75px] w-[91px] lg:h-[60px] lg:w-[80px] height-width-450px"
+                  src="assets/icon/hat.png"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="absolute left-[84px] lg:left-[111px] h-[120px] lg:h-[94px] w-[368px] lg:w-[507px] flex items-center justify-center bg-[#00B8F2] rounded-[21px] outline-dashed-sir text-3xl text-white pl-[50px] lg:pl-[10px] text-font-20px-pc font-bold uppercase w-400px media-1300-left-70px text-size-18px-450px pading-left-35px-450px left-75px-450px"
+              >
+                <div class="text-center lg:ml-[4px]">
+                  <p class="block lg:inline">Học Liệu</p>
+                  <p class="block lg:inline">giáo dục khác</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hidden lg:flex absolute left-[647px] top-[80px] text-[46px] font-bold text-[#14AE5C] text-30px-media-1572px text-26px-1250px left-485px-1250px"
+        >
+          HỆ SINH THÁI HỌC LIỆU SỐ
+        </div>
+
+        <div
+          class="mt-[30px] margin-top-100px lg:mt-0 w-full lg:w-1/2 lg:h-[882px] flex items-center justify-center lg:justify-start lg:ml-[32px] px-4"
+        >
+          <!-- Outer rotated border wrapper -->
+          <div
+            class="relative w-full max-w-[503px] lg:max-w-[745px] h-[390px] lg:h-[503px] flex items-center justify-center"
+          >
+            <!-- Rotated border background 1 -->
+            <div
+              class="absolute top-[55px] lg:top-[108px] left-[-30px] lg:left-[-50px] rounded-[20px] lg:rounded-[25px] w-[501px] lg:w-[745px] h-[354px] lg:h-[428px] w-100-pc-1024 left-27px hieght-400px"
+            >
+              <div class="relative w-full h-full">
+                <svg
+                  class="absolute top-0 left-0 w-full h-full pointer-events-none"
+                  preserveAspectRatio="none"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="calc(100% - 2px)"
+                    height="calc(100% - 2px)"
+                    rx="20"
+                    ry="20"
+                    fill="none"
+                    stroke="#95CC44"
+                    stroke-width="2"
+                    stroke-dasharray="10, 10"
+                    vector-effect="non-scaling-stroke"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Rotated border background 2 -->
+            <div
+              class="absolute top-[80px] lg:top-[138px] left-[-10px] lg:left-[-18px] rounded-[20px] lg:rounded-[25px] -rotate-[2.51deg] w-[501px] lg:w-[745px] h-[350px] lg:h-[428px] z-0 w-100-pc-1024 left-54px hieght-400px"
+            >
+              <div class="relative w-full h-full">
+                <svg
+                  class="absolute top-0 left-0 w-full h-full pointer-events-none"
+                  preserveAspectRatio="none"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="calc(100% - 2px)"
+                    height="calc(100% - 2px)"
+                    rx="20"
+                    ry="20"
+                    fill="none"
+                    stroke="#95CC44"
+                    stroke-width="2"
+                    stroke-dasharray="10, 10"
+                    vector-effect="non-scaling-stroke"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Main content -->
+            <div
+              class="relative h-[390px] lg:h-[503px] w-full max-w-[503px] lg:max-w-[745px] max-w-550px bg-gradient-to-b from-[#EBE667] to-[#D4EBC0] rounded-[16px] lg:rounded-[20px] flex flex-col items-center border z-10 w-100-pc-1024"
+            >
+              <svg
+                class="absolute top-0 left-0 w-full h-full pointer-events-none"
+                preserveAspectRatio="none"
+              >
+                <rect
+                  x="1"
+                  y="1"
+                  width="calc(100% - 3px)"
+                  height="calc(100% - 3px)"
+                  rx="20"
+                  ry="20"
+                  fill="none"
+                  stroke="#95CC44"
+                  stroke-width="2"
+                  stroke-dasharray="10, 10"
+                  vector-effect="non-scaling-stroke"
+                />
+              </svg>
+
+              <p
+                class="text-justify text-[20px] lg:text-3xl px-[32px] pt-[39px] lg:pt-[63px] lg:px-[72px] text-font-24px-pc text-media-1300px-18px pading-x-20 px-media-1300 text-16px-450px text-font-16px-1250px padding-1250px"
+              >
+                Hệ sinh thái học liệu số là nền tảng quan trọng trong giáo dục
+                hiện đại. Chúng tôi có các tài nguyên giáo dục ở dạng định dạng
+                số như ebook, slide, video bài giảng, ngân hàng câu hỏi, đề thi,
+                hệ thống kiểm tra đánh giá,... Những tài nguyên này giúp cá nhân
+                hóa việc học, tăng khả năng chia sẻ, hỗ trợ tương tác dạy và học
+                linh hoạt.
+              </p>
+
+              <button
+                class="uppercase bg-[#F29928] rounded-full py-3 px-[42px] text-white font-bold text-xl hover:bg-[#e08a1f] transition-all duration-300 mt-[28px] lg:mt-12 font-text-16px-media-574px text-14px-450px pading-buttom-450px text-font-16px-1250px"
+              >
+                KHÁM PHÁ CÁC GIẢI PHÁP
+              </button>
+            </div>
+
+            <img
+              src="assets/image/leaf.png"
+              alt=""
+              class="absolute w-[265px] h-[260px] z-10 right-[-100px] bottom-[-122px] hidden bottom--90px right--6px md:block w-h right--22px"
+            />
+          </div>
+
+          <img
+            src="/assets/svg/la-mobile.svg"
+            class="absolute h-[178px] w-[164px] bottom-[70px] lg:bottom-[76px] right-0 z-10 md:hidden"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="block mt-[106px] lg:flex lg:absolute lg:left-[54rem] lg:bottom-[20px] flex justify-center left-46rem-media-1572px left-31rem-1250px"
+        >
+          <button
+            class="button-padding-font-size-14 lg:block w-[180px] text-[24px] bg-fifth rounded-[25px] uppercase text-white font-medium px-[26px] py-[7px] button-padding"
+          >
+            Xem thêm
+          </button>
+        </div>
+
+        <!-- <div
+          class="hidden flex-120px-1024px-1600px mt-[16px] flex justify-center"
+        >
+          <button
+            class="w-[180px] text-[24px] bg-fifth rounded-[25px] uppercase text-white font-medium px-[26px] py-[7px]"
+          >
+            Xem thêm
+          </button>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="w-full flex mt-[44px] lg:mt-[36px] zoom-compress">
+      <p class="h-5 w-[64%] lg:w-[58%] bg-secondary"></p>
+      <p class="h-[30px] w-[36%] lg:w-[42%] bg-fourth"></p>
+    </div>
+
+    <div class="zoom-compress mt-[35px] lg:mt-[31px] relative">
+      <div
+        class="zoom-compress-child relative flex flex-col header-1280px xl:max-w-[calc(100%-24rem)] mx-auto car-item-padding px-[60px] md:px-[10px] xl:px-0 z-10"
+      >
+        <h2
+          class="text-3xl lg:text-[46px] text-size-24px font-bold text-third text-center uppercase mb-[35px] lg:mb-[41px] z-10"
+        >
+          TIN TỨC
+        </h2>
+        <div
+          id="cards-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8"
+        >
+          <!-- Cards will be generated by JavaScript -->
+        </div>
+      </div>
+      <img
+        class="absolute h-[383px] bottom-[-20px] w-full z-0 hieght-340px"
+        src="assets/image/background-news.png"
+        alt=""
+      />
+    </div>
+    <div class="hidden md:flex w-full flex mt-[41px] zoom-compress">
+      <p class="h-5 w-[57%] bg-secondary"></p>
+      <p class="h-[30px] w-[43%] bg-fourth"></p>
+    </div>
+
+    <div class="flex md:hidden w-full flex mt-[80px]">
+      <p class="h-[30px] w-[35.8%] bg-fourth"></p>
+      <p class="h-5 w-[64.2%] bg-secondary"></p>
+    </div>
+
+    <div
+      class="mt-[59px] zoom-compress header-1280px lg:max-w-[calc(100%-22.6rem)] mx-auto flex flex-col lg:flex-row gap-[114px] lg:gap-[46px] items-center pading-x-20px"
+    >
+      <div class="flex flex-col w-full lg:w-[65%] lg:gap-3 items-center">
+        <h3
+          class="uppercase text-center text-3xl text-size-24px lg:text-[38.51px] font-black text-third px-10 text-20px-450px"
+        >
+          <span class="block md:inline">ĐĂNG KÝ NGAY </span>
+          <span class="block md:inline">ĐỂ KHÔNG BỎ LỠ CƠ HỘI</span>
+        </h3>
+        <h2
+          class="text-3xl lg:text-[46px] text-size-24px px-4 font-bold text-third text-center mt-[11px] lg:mt-1 md:mt-0 text-20px-450px"
+        >
+          HỌC TẬP & PHÁT TRIỂN BẢN THÂN
+        </h2>
+
+        <div class="relative mt-[27px]">
+          <img
+            class="hidden lg:block h-[276px] zoom-width-100-pc"
+            src="/assets/image//backround-student.png"
+            alt=""
+          />
+          <img
+            class="block w-full lg:hidden"
+            src="/assets/image//backround-student-mobile.png"
+            alt=""
+          />
+          <img
+            class="absolute right-[45px] bottom-[-82px] lg:right-[31px] lg:bottom-[-190px] w-[310px] lg:w-[510px] h-[144px] lg:h-[238px] hight-178px w-400px bottom-148px right-0px"
+            src="/assets//image//learning-tools.png "
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div
+        class="w-full lg:w-[489px] flex justify-center px-[45px] pading-px-form lg:px-0"
+      >
+        <div
+          class="bg-[#00AA4F] rounded-[20px] shadow-2xl px-[28px] pb-[37px] pt-[90px] lg:pt-[15px] mt-3 lg:mt-0"
+        >
+          <h4
+            class="hidden lg:block text-[24px] font-bold text-white text-center mt-[34px] mb-[27px]"
+          >
+            Thông Tin Đăng Ký
+          </h4>
+          <form action="#">
+            <div class="space-y-4">
+              <div class="grid grid-cols-2 gap-5">
+                <input
+                  id="fullName"
+                  type="text"
+                  placeholder="Họ và tên"
+                  class="w-full bg-white rounded-md px-5 p-3 py-2 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+                />
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="Số điện thoại"
+                  class="w-full bg-white rounded-md p-3 py-2 px-5 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+                />
+              </div>
+
+              <input
+                id="email"
+                type="email"
+                placeholder="Email"
+                class="w-full bg-white rounded-md p-3 py-2 px-5 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+              />
+
+              <input
+                id="address"
+                type="text"
+                placeholder="Địa chỉ"
+                class="w-full bg-white rounded-md p-3 py-2 px-5 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+              />
+
+              <div class="relative w-full">
+                <select
+                  id="registrationContent"
+                  class="w-full bg-white rounded-md p-3 py-2 px-5 text-gray-400 placeholder-[#B8B8B8] appearance-none focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow"
+                >
+                  <option value="" disabled selected class="text-gray-400">
+                    Nội dung đăng ký
+                  </option>
+                  <option value="course1" class="text-gray-700">
+                    Khóa học 1
+                  </option>
+                  <option value="course2" class="text-gray-700">
+                    Khóa học 2
+                  </option>
+                  <option value="consultation" class="text-gray-700">
+                    Tư vấn
+                  </option>
+                  <option value="other" class="text-gray-700">Khác</option>
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700"
+                >
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <textarea
+                id="notes"
+                placeholder="Ghi chú (Nếu có)"
+                rows="3"
+                class="w-full bg-white rounded-md p-3 px-5 pt-5 text-gray-700 placeholder-[#B8B8B8] focus:outline-none focus:ring-2 focus:ring-green-400 transition-shadow resize-none"
+              ></textarea>
+            </div>
+
+            <div class="flex justify-center mt-[130px]">
+              <button
+                type="submit"
+                class="bg-fifth text-white font-medium tracking-wider py-[13px] px-[29px] rounded-lg hover:bg-[#004d2a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#05a357] focus:ring-white see-more-button transition-all duration-300 ease-in-out transform hover:scale-105 text-[24px] pading-px-button text-size-16px"
+              >
+                ĐĂNG KÝ NGAY
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="pt-[111px]" id="footer"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

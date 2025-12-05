@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function(w,d){
+          var m=d.querySelector("meta[name=viewport]"),t;
+          if(!m){m=d.createElement('meta');m.name='viewport';d.head.appendChild(m)}
+          function f(){
+              var realW = Math.min(w.screen.width, w.innerWidth);
+              if(realW < 768){
+                  var r = realW / 576;
+                  if(r > 1) r = 1;
+                  m.content='width=576,initial-scale='+r+',maximum-scale=1,user-scalable=yes';
+              }else{
+                  m.content='width=device-width,initial-scale=1';
+              }
+          }
+          f();       
+          w.addEventListener("resize",function(){clearTimeout(t);t=setTimeout(f,50)});
+          w.addEventListener("orientationchange",function(){setTimeout(f,200)});
+      })(window,document);
+    </script>
+    <noscript>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </noscript>
+    <title>Góc cổ đông</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div
+      class="zoom-compress header-1280px lg:max-w-[calc(100%-34rem)] mx-auto w-full mt-10 hader-pading px-[49px] lg:px-0"
+    >
+      <div class="w-full flex items-end mt-10">
+        <p
+          class="h-[39px] w-full md:w-[67%] bg-secondary text-base md:text-lg text-white font-bold flex items-center pl-5 uppercase gap-4"
+        >
+          <!-- <i class="fa fa-home mr-3" aria-hidden="true"></i> GÓC CỔ ĐÔNG -->
+          <img
+            src="./assets//svg/icon-home.svg"
+            class="w-[28px] h-[23px]"
+            alt=""
+          />
+          <span>GÓC CỔ ĐÔNG</span>
+        </p>
+        <p class="hidden md:block h-5 w-[33%] bg-fourth"></p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="mt-6">
+        <h1 class="text-fourth font-bold text-2xl mb-2">GÓC CỔ ĐÔNG</h1>
+        <p class="font-light text-xs italic mb-5">THỨ HAI, 08/09/2025 | 5:00</p>
+
+        <!-- Shareholders Information Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div
+            class="px-6 py-3 text-white h-[200px] relative overflow-hidden bg-cover bg-center"
+            style="background-image: url('/assets/image/baocao-dinhky.png')"
+          >
+            <div
+              class="absolute inset-0 bg-[#075D3099] w-[53%] h-[70%] rounded-br-[40px]"
+            ></div>
+            <div
+              class="absolute inset-0 bg-[#5BA83CB2] w-[50%] h-[60%] rounded-br-[33px]"
+            ></div>
+
+            <div class="relative z-10">
+              <h3
+                class="md:text-sm lg:text-lg font-bold mb-2 uppercase w-[40%] md:w-[45%] lg:w-[40%]"
+              >
+                Thông tin công bố
+              </h3>
+              <div class="flex items-center">
+                <div class="bg-white rounded-full px-3 py-2 flex items-center">
+                  <i class="fa-solid fa-chevron-right text-black"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Báo cáo định kỳ -->
+          <div
+            class="px-6 py-3 text-white h-[200px] relative overflow-hidden bg-cover bg-center"
+            style="background-image: url('/assets/image/baocao-dinhky.png')"
+          >
+            <div
+              class="absolute inset-0 bg-[#075D3099] w-[53%] h-[70%] rounded-br-[33px]"
+            ></div>
+            <div
+              class="absolute inset-0 bg-[#5BA83CB2] w-[50%] h-[60%] rounded-br-[40px]"
+            ></div>
+            <div class="relative z-10">
+              <h3
+                class="md:text-sm lg:text-lg font-bold mb-2 w-[30%] md:w-[40%] lg:w-[30%] uppercase"
+              >
+                BÁO CÁO ĐỊNH KỲ
+              </h3>
+              <div class="flex items-center">
+                <div class="bg-white rounded-full px-3 py-2 flex items-center">
+                  <i class="fa-solid fa-chevron-right text-black"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="px-6 py-3 text-white h-[200px] relative overflow-hidden bg-cover bg-center"
+            style="background-image: url('/assets/image/baocao-dinhky.png')"
+          >
+            <div
+              class="absolute inset-0 bg-[#075D3099] w-[53%] h-[70%] rounded-br-[33px]"
+            ></div>
+            <div
+              class="absolute inset-0 bg-[#5BA83CB2] w-[50%] h-[60%] rounded-br-[40px]"
+            ></div>
+            <div class="relative">
+              <h3
+                class="lg:text-lg font-bold mb-2 uppercase md:text-sm w-[35%] md:w-[50%] lg:w-[40%]"
+              >
+                Đại hội đồng cổ đông
+              </h3>
+              <div class="flex items-center">
+                <div class="bg-white rounded-full px-3 py-2 flex items-center">
+                  <i class="fa-solid fa-chevron-right text-black"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Documents Section -->
+        <div
+          class="bg-white rounded-lg shadow-lg lg:shadow-none overflow-hidden lg:px-[80px]"
+        >
+          <!-- Header with Year Filter -->
+          <div
+            class="bg-gray-50 lg:bg-white pt-10 p-4 pb-0 flex justify-center mb-10"
+          >
+            <div
+              class="flex flex-col lg:flex-row items-center justify-center md:justify-between lg:justify-center gap-4"
+            >
+              <h2 class="text-2xl font-bold text-gray-800">TÀI LIỆU NĂM</h2>
+              <div class="flex items-center gap-2">
+                <button class="p-2 text-fourth">
+                  <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+                <div
+                  class="px-4 w-[100px] py-1 text-[20px] text-center bg-white border border-fourth font-medium rounded-full"
+                >
+                  2025
+                </div>
+                <button class="p-2 text-fourth">
+                  <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Table Header -->
+          <div
+            class="hidden md:grid md:grid-cols-12 bg-green-600 text-white text-base font-bold divide-x-[2px] divide-white"
+          >
+            <div class="col-span-2 p-2 text-center border-b-[2px] border-white">
+              Ngày đăng
+            </div>
+            <div class="col-span-7 p-2 text-center border-b-[2px] border-white">
+              Tiêu đề
+            </div>
+            <div class="col-span-3 p-2 text-center border-b-[2px] border-white">
+              File đính kèm
+            </div>
+          </div>
+
+          <!-- Table Content -->
+          <div class="md:divide-y-[2px] md:divide-white">
+            <!-- Row 1 -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 transition-colors md:bg-[#D9E9B8] bg-white md:shadow-none shadow-md md:rounded-none rounded-lg md:mx-0 mx-4 md:my-0 my-2 md:divide-x-[2px] md:divide-white divide-y divide-gray-200"
+            >
+              <div
+                class="md:col-span-2 md:p-1 p-6 md:px-6 md:flex md:items-center md:justify-center"
+              >
+                <div class="md:text-center">
+                  <span class="text-[15px] font-medium md:font-normal"
+                    >29/04/2025</span
+                  >
+                  <span class="block md:hidden text-[15px] text-gray-500"
+                    >Ngày đăng</span
+                  >
+                </div>
+              </div>
+              <div class="md:col-span-7 md:p-1 md:px-6 p-6 flex items-center">
+                <p class="text-[15px] text-gray-800">
+                  CBTT: Thông báo của UBCKNN về việc hủy tự cách công ty đại
+                  chúng đối với EPH
+                </p>
+              </div>
+              <div class="md:col-span-3 md:p-1 md:px-6 p-6">
+                <div class="text-center">
+                  <button
+                    class="bg-gray-100 border border-[#009950] hover:bg-gray-200 px-4 md:py-1 md:px-[32px] rounded-full text-sm transition-colors text-[#009950] font-medium py-2"
+                  >
+                    <!-- <i class="fas fa-download mr-2"></i> -->
+                    <span>Download</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 transition-colors md:bg-[#D9E9B8] bg-white md:shadow-none shadow-md md:rounded-none rounded-lg md:mx-0 mx-4 md:my-0 my-2 md:divide-x-[2px] md:divide-white divide-y divide-gray-200"
+            >
+              <div
+                class="md:col-span-2 md:p-1 md:px-6 p-6 md:flex md:items-center md:justify-center"
+              >
+                <div class="md:text-center">
+                  <span class="text-sm font-medium md:font-normal"
+                    >29/04/2025</span
+                  >
+                  <span class="block md:hidden text-xs text-gray-500 mt-1"
+                    >Ngày đăng</span
+                  >
+                </div>
+              </div>
+              <div class="md:col-span-7 md:p-1 p-6 md:px-6 flex items-center">
+                <p class="text-sm text-gray-800">
+                  Công bố thông tin định chính: Báo cáo tình hình quản trị Công
+                  ty năm 2024
+                </p>
+              </div>
+              <div class="md:col-span-3 md:p-1 md:px-6 p-6">
+                <div class="text-center">
+                  <button
+                    class="bg-gray-100 border border-[#009950] hover:bg-gray-200 px-4 md:py-1 rounded-full text-sm transition-colors md:px-[32px] text-[#009950] font-medium py-2"
+                  >
+                    <!-- <i class="fas fa-download mr-2"></i> -->
+                    <span>Download</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 transition-colors md:bg-[#D9E9B8] bg-white md:shadow-none shadow-md md:rounded-none rounded-lg md:mx-0 mx-4 md:my-0 my-2 md:divide-x-[2px] md:divide-white divide-y divide-gray-200"
+            >
+              <div class="md:col-span-2 md:p-1 md:px-6 p-6">
+                <div class="md:text-center">
+                  <span class="text-sm font-medium md:font-normal"
+                    >29/04/2025</span
+                  >
+                  <span class="block md:hidden text-xs text-gray-500 mt-1"
+                    >Ngày đăng</span
+                  >
+                </div>
+              </div>
+              <div class="md:col-span-7 md:p-1 md:px-6 p-6">
+                <p class="text-sm text-gray-800">
+                  Nghị quyết: Biên bản ĐHCĐ thường niên năm 2025
+                </p>
+              </div>
+              <div class="md:col-span-3 md:p-1 md:px-6 p-6">
+                <div class="text-center">
+                  <button
+                    class="bg-gray-100 border border-[#009950] hover:bg-gray-200 px-4 md:py-1 rounded-full text-sm transition-colors md:px-[32px] text-[#009950] font-medium py-2"
+                  >
+                    <!-- <i class="fas fa-download mr-2"></i> -->
+                    <span>Download</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 transition-colors md:bg-[#D9E9B8] bg-white md:shadow-none shadow-md md:rounded-none rounded-lg md:mx-0 mx-4 md:my-0 my-2 md:divide-x-[2px] md:divide-white divide-y divide-gray-200"
+            >
+              <div
+                class="md:col-span-2 md:p-1 md:px-6 p-6 md:flex md:items-center md:justify-center"
+              >
+                <div class="md:text-center">
+                  <span class="text-sm font-medium md:font-normal"
+                    >29/04/2025</span
+                  >
+                  <span class="block md:hidden text-xs text-gray-500 mt-1"
+                    >Ngày đăng</span
+                  >
+                </div>
+              </div>
+              <div class="md:col-span-7 md:p-1 md:px-6 p-6">
+                <p class="text-sm text-gray-800">
+                  CBTT bổ sung tài liệu ĐHCĐ thường niên năm 2025
+                </p>
+              </div>
+              <div class="md:col-span-3 md:p-1 md:px-6 p-6">
+                <div class="text-center">
+                  <button
+                    class="bg-gray-100 border border-[#009950] hover:bg-gray-200 px-4 md:py-1 rounded-full text-sm transition-colors md:px-[32px] text-[#009950] font-medium py-2"
+                  >
+                    <!-- <i class="fas fa-download mr-2"></i> -->
+                    <span class="">Download</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Table Header (shown only on mobile) -->
+          <div
+            class="md:hidden bg-green-600 text-white p-4 text-center font-bold text-sm"
+          >
+            Danh sách tài liệu cổ đông
+          </div>
+        </div>
+
+        <!-- Pagination
+        <div class="flex justify-center mt-6">
+          <div class="flex items-center gap-2">
+            <button
+              class="p-2 text-gray-500 hover:text-gray-700 disabled:opacity-50"
+              disabled
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="px-4 py-2 bg-green-600 text-white rounded-lg">
+              1
+            </button>
+            <button
+              class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+            >
+              2
+            </button>
+            <button
+              class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+            >
+              3
+            </button>
+            <span class="px-2 text-gray-500">...</span>
+            <button
+              class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+            >
+              10
+            </button>
+            <button class="p-2 text-gray-500 hover:text-gray-700">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="lg:mt-[107px]" id="footer"></div>
+  </body>
+  <script src="/js/shareholders.js"></script>
+</html>
